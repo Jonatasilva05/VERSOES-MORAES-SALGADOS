@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8"/>
+		<title>
+			Aumentando texto com jQuery
+		</title>
+		<script src="js/jquery-3.1.1.min.js" type="text/javascript">
+		</script>
+		<script type="text/javascript"> 
+
+			$(document).ready(function(){
+				var tamanhoFont = 12;
+				
+				//Fonte 12 padrão oculta o botao de diminiur
+				if(tamanhoFont == 12){
+					$("#textoMenor").hide();
+				}
+				
+				//Aciona botão fonte maior
+				$("#textoMaior").click(function(){
+					tamanhoFont = tamanhoFont + 1;
+					
+					//Fonte 20 maximo permitido oculta botão aumentar
+					if(tamanhoFont == 20){
+						$("#textoMaior").hide();
+					}
+					
+					//Fonte maior que 12 mostra botão diminiuir
+					if(tamanhoFont > 12){
+						$("#textoMenor").show();
+					}
+					
+					//Altera propriedades da fonte da div conteudo
+					$("#conteudo").css("font-size", tamanhoFont + "px");
+
+				});
+				
+				//Aciona botão fonte menor
+				$("#textoMenor").click(function(){
+					tamanhoFont = tamanhoFont - 1;
+					
+					//Fonte menor 20 mostra botão aumentar
+					if(tamanhoFont < 20){
+						$("#textoMaior").show();
+					}
+					
+					//Fonte menor 13 oculta botão diminiuir
+					if(tamanhoFont < 13){
+						$("#textoMenor").hide();
+					}
+					
+					//Altera propriedades da fonte da div conteudo
+					$("#conteudo").css("font-size", tamanhoFont + "px");
+
+				});
+
+			});
+
+		</script>
+		
+		<style type="text/css" media="all"> 
+		
+			body {
+				color: #000;
+				font-family: Verdana;
+				font-size: 12px;
+			}
+					
+			span {   
+				cursor: pointer;    
+			}       
+
+			#textoMaior {
+				font-size:18px;
+			}
+
+			#textoMenor {
+				font-size:14px;
+			}
+
+
+		</style>
+		
+	</head>
+	<body>
+
+		Aumentar texto<br /><br />
+		<span id="textoMaior">A+</span>&nbsp;<span id="textoMenor">A-</span>
+
+		<div id="conteudo">
+			<p>
+				CSS é a sigla em inglês para Cascading Style Sheet que em português foi traduzido para folha de estilo em cascata e é um mecanismo simples para adicionar estilos (p.ex., fontes, cores, espaçamentos) aos documentos Web.
+				
+				A grande vantagem do uso de CSS é a de separar a marcação HTML, da apresentação do site. Em outras palavras, vale dizer que o HTML destina-se unicamente a estruturar e marcar o conteúdo, ficando por conta das CSS toda a responsabilidade pelo visual do documento.
+				
+				HTML marca e estrutura textos, cabeçalhos, parágrafos, links, botões, formulários, imagens e demais elementos da página e CSS define cores, posicionamento na tela, estilos de linhas, bordas e tudo o mais relacionado à apresentação.
+				
+				A adoção desta técnica resulta em múltiplas vantagens e benefícios que não são conseguidos quando se utiliza o conceito largamente empregado para construção de web sites, baseado no uso de tabelas e de atributos de estilização dentro das tags HTML.
+				
+				Projetar um site navegável tanto em monitor de 1280x1024 quanto em uma telinha de 320x240 de um PDA, com utilização da mesma marcação é fantástico e possível. Basta projetar em conformidade com os Padrões Web entregando às CSS a missão de acomodar o conteúdo na tela!
+			</p>
+		</div>
+
+</body>
+</html>
