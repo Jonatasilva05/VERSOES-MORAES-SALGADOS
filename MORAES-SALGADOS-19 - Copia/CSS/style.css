@@ -1,0 +1,221 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
+
+:root {
+	--header--light: #ffae00;
+	--header-border: #000000;
+	--main--light: #a38544;
+	--btn--header--light: #d73636;
+	--header-nav-a-color: #000;
+	--header-nav-a-hover-color: #ffffff;
+	--header-nav-a-hover-box-shadow-parte1: #21272e;
+	--header-nav-a-hover-box-shadow-parte2: #536174;
+	--header-nav-a-hover-background: #6d7074;
+	--header-nav-loginBtn-hover-background: #ff0000;
+	--header-nav-loginBtn-hover-color: #fff;
+	--header-nav-loginBtn-hover-box-shadow: #fff;
+	--header-nav-loginBtn-hover-border: #4dff00;
+}
+
+.darck{
+	/* para colocar no darck header 2b3540, para colocar nos a href 8f6fef */
+	--header--light: #7a7c7e;
+	--main--light: #2b3540;
+	--btn--header--light: #ff0101;
+}
+
+/* Azul Escuro: #1E90FF
+Verde Escuro: #006400
+Amarelo Escuro: #BDB76B
+Cinza Escuro: #2F4F4F
+Marrom Escuro: #8B4513
+Vermelho Escuro: #8B0000
+Roxo Escuro: #800080 */
+
+/* Azul Claro: #ADD8E6
+Verde Suave: #98FB98
+Amarelo Suave: #FFFFE0
+Branco: #FFFFFF
+Bege: #F5F5DC
+Laranja: #FFA500
+Vermelho: #FF0000 */
+
+*{
+   font-family: 'Nunito', sans-serif;
+   margin:0; 
+   padding:0;
+   box-sizing: border-box;
+   outline: none;
+   border:none;
+   text-decoration: none;
+   transition: all .2s linear;
+   text-transform: capitalize;
+}
+
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+}
+
+body{
+   	display: flex;
+	flex-wrap: wrap;
+	flex: 1 1 100vw;
+	margin: 3px;
+}
+
+header, nav, main, aside, footer {
+	display: flex;
+	margin: 3px;
+}
+
+header {
+	border: 2px solid var(--header-border);
+    margin: -2px;
+    color: #000000;
+    background: var(--header--light);
+	flex: 1 1 100vw;
+}
+
+header a {
+    padding: 1.5%;
+    font-size: 1.8rem;
+}
+
+header nav a:hover {
+	color: var(--header-nav-a-hover-color);
+	transform: scale(1.5);
+	box-shadow: 8px 8px 4px var(--header-nav-a-hover-box-shadow-parte1),
+				  0px -500px 70px var(--header-nav-a-hover-box-shadow-parte2);
+	background: var(--header-nav-a-hover-background);
+	border-radius: 15px;
+	transition: 500ms;
+}
+  
+
+header #logo {
+	display: flex;
+	flex: 0 1 25%;
+	justify-content: center;
+	align-items: center;
+}
+
+#openMenu, #closeMenu {
+	border: none;
+	background: none;
+	font-size: 30px;
+	font-weight: bold;
+	padding: 0px 5px 0px 5px;
+	cursor: pointer;
+	display: none;
+  	color: #000000;
+}
+
+header nav {
+	justify-content: flex-end;
+	align-items: center;
+	flex: 1 1 200px;
+}
+
+header nav a {
+	margin: 0 3%;
+	font-size: 15pt;
+	color: var(--header-nav-a-color);
+}
+
+header a { 
+	text-decoration: none;
+	color: inherit;
+}
+
+header a img{
+    width: 150px;
+    height: 90px;
+}
+
+header nav .loginBtn {
+   background: var(--btn--header--light);
+   border-radius: 16px;
+   border: 2px solid #303030;
+   height: 35%;
+   display: flex;
+   align-items: center;
+}
+
+header nav .loginBtn:hover {
+   background: var(--header-nav-loginBtn-hover-background);
+   color: var(--header-nav-loginBtn-hover-color);
+   box-shadow: 0px 0px 30px 18px var(--header-nav-loginBtn-hover-box-shadow);
+   border: 2px solid var(--header-nav-loginBtn-hover-border);
+}
+
+main {
+   	margin: 0;
+   	/* background: url("../img/bg.jpg") no-repeat; fixed para fixar a imagem */
+   	background: var(--main--light);
+	flex: 20 1 500px;
+}
+
+aside {
+	flex: 1 1 200px;
+}
+
+footer {
+	flex: 1 1 100vw;
+}
+
+@media only screen and (max-width: 860px) {
+	#openMenu, #closeMenu {
+		display: block;
+	}
+
+	#openMenu {
+		margin-left: auto;
+	}
+
+	#closeMenu {
+		position: fixed;
+		/* right: 50%; */
+      bottom: 50%;
+		top: 20%;
+	}
+
+	nav {
+		position: fixed;
+		width: 100vw;
+		height: 100vh;
+		background: rgba(161, 161, 161, 0.733);
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin: 0;
+		display: none;
+		opacity: 0;
+		transition: 0.3s;
+      color: #000000;
+	}
+
+	nav a {
+    	font-size: 1.8rem;
+		margin: 3%;
+    	position: relative;
+    	bottom: 20%;
+	}
+
+    nav a:hover {
+      	color: #0a69cf;
+		transform: scale(1.2);
+    }
+
+    header nav .loginBtn {
+      	background: #ff0101;
+      	border-radius: 16px;
+      	border: 2px solid #303030;
+      	height: 8%;
+      	display: flex;
+      	align-items: center;
+   }
+   	header nav a{
+		font-size: 4.5rem;
+	}
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seleção de Produto e Quantidade</title>
+</head>
+<body>
+
+<h2>Selecione o Produto e a Quantidade:</h2>
+
+<form action="/action_page.php">
+  <label for="produto">Produto:</label>
+  <select id="produto" name="produto">
+    <option value="produto1">Produto 1</option>
+    <option value="produto2">Produto 2</option>
+    <option value="produto3">Produto 3</option>
+    <!-- Adicione mais opções de produtos conforme necessário -->
+  </select><br><br>
+  <label for="quantidade">Quantidade:</label>
+  <input type="number" id="quantidade" name="quantidade" min="1" max="10"><br><br>
+  <input type="submit" value="Adicionar ao Carrinho">
+</form>
+
+</body>
+</html>

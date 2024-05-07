@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hands and Water Effect</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .container {
+    position: relative;
+    height: 100%;
+  }
+
+  .hand {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: #f0e68c;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 1s;
+    z-index: 1;
+  }
+
+  .hand.left {
+    transform-origin: 100% 50%;
+  }
+
+  .hand.right {
+    transform-origin: 0% 50%;
+  }
+
+  .water {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: blue;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scaleY(0);
+    z-index: 0;
+    transition: transform 1s;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="hand left"></div>
+  <div class="hand right"></div>
+  <div class="water"></div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    let hands = document.querySelectorAll('.hand');
+    let water = document.querySelector('.water');
+
+    // Open hands
+    setTimeout(function() {
+      hands.forEach(hand => {
+        hand.style.transform = 'translate(-50%, -50%) scale(0.5)';
+      });
+    }, 1000);
+
+    // Water flow
+    setTimeout(function() {
+      water.style.transform = 'translate(-50%, -50%) scaleY(1)';
+    }, 2000);
+  });
+</script>
+</body>
+</html>
