@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <!-- <link rel="stylesheet" href="cadastro.css"> -->
+
+    <title>Formulário</title>
+
+</head>
+<body>
+    <main>
+        <form id="form"> <!--Formulário-->
+            <div id="box"> <!--Cor de fundo-->
+                <fieldset>
+                    <legend><b>Fórmulário de Clientes</b></legend>
+                    <br>
+                        <div class="inputBox">  <!--Caixa Nome-->
+                            <input type="text" name="nome" id="nome" class="inputUser" required>
+                            <label for="nome" class="labelInput">Nome completo</label>
+                        </div>
+                        
+                    <br><br>
+
+                        <div class="inputBox">  <!--Caixa Nome-->
+                            <input type="text" name="sobrenome" id="sobrenome" class="inputUser" required>
+                            <label for="nome" class="labelInput">Sobrenome</label>
+                        </div>
+
+                    <br><br>
+
+                        <div class="inputBox">  <!--Caixa E-mail-->
+                            <input type="email" name="email" id="email" class="inputUser" required>
+                            <label for="email" class="labelInput">E-mail</label>
+                        </div>
+
+                    <br><br>
+
+                        <div class="inputBox">  <!--Caixa Telefone-->
+                            <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                            <label for="telefone" class="labelInput">Telefone</label>
+                        </div>
+
+                    <br><br>
+
+                        <div class="inputBox">  <!--Caixa Telefone-->
+                            <input type="tel" name="celular" id="celular" class="inputUser" required>
+                            <label for="telefone" class="labelInput">Celular</label>
+                        </div>
+
+                    <br><br>
+
+                        <div class="inputBox">  <!--Caixa Telefone-->
+                            <input type="number" name="cpf" id="cpf" class="inputUser" required>
+                            <label for="telefone" class="labelInput">C.P.F</label>
+                        </div>
+
+                    <br><br>
+
+                        <div class="inputBox">  <!--Caixa Telefone-->
+                            <input type="number" name="rg" id="rg" class="inputUser" required>
+                            <label for="telefone" class="labelInput">R.G</label>
+                        </div>
+
+                    <br><br>
+
+                        <label for="data_nascimento"><b>Data de Nascimento:</b></label> <!--Caixa de Colocar a Data-->
+                        <input type="date" name="data_nascimento" id="data_nascimento" required>
+
+                        <br><br>
+
+                        <label for="cidade">Escolha sua cidade</label>
+                            <select name="cidades" id="cidades" required>
+                                <option value=""></option>
+                                <option value="taquaritinga">Taquaritinga</option>
+                                <option value="matão">Matão</option>
+                                <option value="jaboticabal">Jaboticabal</option>
+                                <option value="araraquara">Araraquara</option>
+                            </select>
+                    <br><br>
+                    <label for="escola">Escolha sua escola</label>
+                    <select name="cidades" id="escolas" required]>
+                        <option value=""></option>
+                        <option value="taquaritinga">Taquaritinga</option>
+                        <option value="matão">Matão</option>
+                        <option value="jaboticabal">Jaboticabal</option>
+                        <option value="araraquara">Araraquara</option>
+                    </select>
+                    <br><br>
+                        <div class="inputBox">
+                            <input type="text" name="endereco" id="endereco" class="inputUser" required> <!--Caixa Endereço-->
+                            <label for="endereco" class="labelInput">Endereço</label>
+                        </div>
+                        <br>
+                        <label for="upload">Faça o upload do Termo de responsabilidade</label>
+                        <input type="file" name="arquivo" id="arquivo" required>
+<br><br>
+                        <label for="upload">Faça o upload do comprovante de residência</label>
+                        <br><br>
+                        <input type="file" name="arquivo" id="arquivo" required>
+
+                        <label for="upload">Faça o upload da declaração de matrícula</label>
+
+                        <input type="file" name="arquivo" id="arquivo" required>
+                        <label for="autorização">Caso seja menor de idade complete as informações abaixo</label>
+<br><br>
+                        <input type="text" name="pai" id="pai">
+                        <label for="pai">Nome do Pai completo</label>
+                        <br><br>
+
+                        <input type="text" name="mae" id="mae">
+                        <label for="mae">Nome da Mãe completo</label>
+                        <br><br>
+
+                        <input type="text" name="responsavel" id="responsavel" >
+                        <label for="responsavel">Nome do(a) responsavel completo </label>
+<br><br>
+                        <label for="upload">Faça o upload da autorização de menor</label>
+                        <input type="file" name="arquivo" id="arquivo" required>
+                        <br><br>
+                        <input type="submit" name="submit" id="submit"> <!--Caixa Botão de envio-->
+                </fieldset>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

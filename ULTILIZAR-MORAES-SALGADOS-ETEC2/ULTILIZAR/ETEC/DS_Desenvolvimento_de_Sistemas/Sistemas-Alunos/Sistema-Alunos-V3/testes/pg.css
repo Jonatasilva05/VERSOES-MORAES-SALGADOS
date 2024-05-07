@@ -1,0 +1,59 @@
+#ano {
+    display: grid;
+    grid-template-columns: repeat(4, 15vw);
+    grid-column-gap: 10px;
+    grid-row-gap: 2em;
+}
+
+.meses , #arq{
+    border: 3px solid #366fff;
+}
+
+#lbt1 , .lbt1 {
+    background-color: #F5DEB3;
+}
+
+#lbt2 , .lbt2 {
+    background-color: #FFFF00;
+}
+
+#lbt3 , .lbt3 {
+    background-color: #FFA500;
+}
+
+#lbt4 , .lbt4 {
+    background-color: #008000;
+}
+
+#lbt5 , .lbt5 {
+    background-color: #FFFFFF;
+}
+
+#lbt6 , .lbt6 {
+    background-color: #808080;
+}
+
+#lbt7 , .lbt7 {
+    background-color: #000000;
+    color: #fff;
+}
+
+#lbt8 , .lb8 {
+    background-color: #800000;
+}
+
+#lbt9 , .lbt9 {
+    background-color: #C8A2C8;
+}
+
+#lbt10 , .lbt10 {
+    background-color: #FFC0CB;
+}
+
+#lbt11 , .lbt11 {
+    background-color: #0000FF;
+}
+
+#lbt12 , .lbt12 {
+    background-color: #FF0000;
+}
