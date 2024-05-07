@@ -1,0 +1,13 @@
+Aqui foram colocados os scripts que estavam comentados ou nao tinham efeito nenhum sobre as paginas
+
+SÃO ELES:
+index.js 
+drop.js
+mainResponsivo.js
+
+
+FAZIA PARTE DE:
+
+index.js estava sem funcionalidade em nenhuma página
+drop.js talvez teria alguma funcionalidade no passado mas atualmente sem ultilidade nenhuma e estava comentado
+mainResponsivo.js funcionava apenas o main, então foi atualizado para fazer a troca de cada elemento com display none e incline-block

@@ -1,0 +1,121 @@
+<div class="container">
+			<h3 class="title">Quem somos?</h3>
+			<p class="texto-main">Somos uma micro-empresa do ramo alimenticio <br> voltada para área de Salgados localizada na cidade de <br> Taquaritinga-SP interior de São Paulo</p>
+	
+			<br><br>
+	
+			<!--<h3 class="title">Algumas das fotos da nossa empresa</h3>--> 
+	
+			<div class="containerRow">
+				<div class="row">
+					<div class="col-sm">
+						<div class="image-cir">
+							<div class="imagem-circulo">
+								<img src="./img/fznd/img2.jpg" alt="ciculo">
+								<span class="spiner-cicle"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+				<span class="txtContainerRow">
+					<h2>Nós somos uma empresa única!</h2>
+					<br>
+					<h3>Não ultilizamos mãos de obras de terceiros, desde o modo de preparo, até a venda e o consumo de nossos clientes, são feitos diretamente de nossa empresa. Só ultilizamos matérias primas tercerizados e especiarias.</h3>
+				</span>
+			</div>
+	
+			<div class="card" style="width: 18rem;">
+				<img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">
+				<div class="card-body">
+				<h5 class="card-title">Título do card</h5>
+				<p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+				<a href="#" class="btn btn-primary">Visitar</a>
+				</div>
+			</div>
+			
+			<p class="image-main"><img src="#" alt="aqui entra uma imagem da dona da empresa"></p>
+	
+			<!--<div class="col-sm">
+						<div class="image-cir">
+							<div class="imagem-circulo">
+								<img src="./img/fznd/img2.jpg" alt="ciculo">
+								<span class="spiner-cicle"></span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm">
+						<div class="image-cir">
+							<div class="imagem-circulo">
+								<img src="./img/fznd/img2.jpg" alt="ciculo">
+								<span class="spiner-cicle"></span>
+							</div>
+						</div>
+				</div>-->
+			<br>
+		</div>
+
+
+
+		#main .container .texto-main{
+			color: white;
+			text-align: center;
+			font-size: 15px;
+		}
+		#main .container .texto-main img {
+			height: 200px;
+			width: 125px;
+			border-radius: 10px;
+		 }
+		.container .title {
+			font-size: 3.5rem;
+			color:#c3c1c1;
+			margin-bottom: 3rem;
+			text-transform: uppercase;
+			text-align: center;
+		 }
+		 .container .image-cir {
+			margin: 5% 0;
+		 }
+		 .container .imagem-circulo {
+			position: relative;
+			width: 320px;
+			height: 320px;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center ;
+		}
+		.container .imagem-circulo img {
+			width:  90%;
+			height: 90%;
+			border-radius: 50%;
+			border: .2rem solid red;
+		}
+		.container .spiner-cicle {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%) rotate(0);
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+			border-top: .2rem solid #2b3540;
+			border-bottom: .2rem solid #2b3540;
+			border-left: .2rem solid white;
+			border-right: .2rem solid white ; 
+			animation: circuloRodar 8s linear infinite;
+		}
+		
+		@keyframes circuloRodar {
+			100% {
+				transform: translate(-50%, -50%) rotate(360deg);
+			}
+		}
+		
+		@media (max-width: 767px) {
+			#main .container .row .col-sm .image-cir .imagem-circulo {
+				margin: 0 auto;
+			}
+		}
+		

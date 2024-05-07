@@ -1,0 +1,7 @@
+Aqui foram colocados os scripts que estavam separados e faziam funções proximas, então foram agrupados em um unico script
+
+SÃO ELES:
+alertaIcon.js agrupado em alertas.js
+
+FAZIA PARTE DE:
+alertaIcon.js da pasta JS que era conectada em index.html e a outra versão para testes
