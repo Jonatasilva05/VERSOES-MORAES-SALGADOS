@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title> teste pagina css alternado </title>
+	<link rel="alternate stylesheet" type="text/css" href="paul.css" title="paul" />
+	<link rel="alternate stylesheet" type="text/css" href="default.css" title="wacke" />
+	<script type="text/javascript">
+	   function setActiveStyleSheet(title) {
+			var i, a, main;
+			alert('teste');
+			for(i=0;(a=document.getElementsByTagName("link")[i]);i++)
+			 {
+			if(a.getAttribute("rel").indexOf("style") != -1 && a.getAttribute("title")) {
+			a.disabled = true;
+			if(a.getAttribute("title") == title) a.disabled = false;
+				 }
+			}
+		}
+	
+	</script>
+   </head>
+   <body>
+      <a href="#" onclick="setActiveStyleSheet('paul'); return false; ">change style to default</a>
+	  <br>
+	  <a href="#" onclick="setActiveStyleSheet('wake'); return false;">change style to paul</a>
+	  <p>
+	     teste paragrafo
+	   </p>
+   </body>
+</html>   

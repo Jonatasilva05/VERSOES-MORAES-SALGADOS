@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/cadaste.css">
+
+    <title>TaquaShop</title>
+
+</head>
+<body>
+
+<header>    <!--C.A.B.E.C.Á.R.I.O-->
+    <div id="header">
+        <nav id="nav-bar">
+            <div id="logo">
+                <a href="./index.html">
+                    <img src="./img/LOGON.png" alt="logo">
+                </a>
+            </div>
+            <div id="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="./produtos/alim.html" class="nav-link">Alimentos</a></li>
+                    <li class="nav-item"><a href="./produtos/bele.html" class="nav-link">Beleza</a></li>
+                    <li class="nav-item"><a href="./produtos/veic.html" class="nav-link">Veículos</a></li>
+                    <li class="nav-item"><a href="./produtos/move.html" class="nav-link">Movéis</a></li>
+                    <li class="nav-item"><a href="./produtos/tecn.html" class="nav-link">Tecnologia</a></li>
+                    <li class="nav-item"><a href="./produtos/elet.html" class="nav-link">Eletrodomésticos</a></li>
+                </ul>
+            </div>
+
+            <div class="login-button">
+                <input type="submit" value="Entrar" name="entrar" id="Entrar" onclick="Entrou()">
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()">
+                    <img class="icon" src="./img/responsive/menu_white_36dp.svg" alt="">
+                </button>
+            </div>   
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="./produtos/alim.html" class="nav-link">Alimentos</a></li>
+                <li class="nav-item"><a href="./produtos/bele.html" class="nav-link">Beleza</a></li>
+                <li class="nav-item"><a href="./produtos/veic.html" class="nav-link">Veículos</a></li>
+                <li class="nav-item"><a href="./produtos/move.html" class="nav-link">Movéis</a></li>
+                <li class="nav-item"><a href="./produtos/tecn.html" class="nav-link">Tecnologia</a></li>
+                <li class="nav-item"><a href="./produtos/elet.html" class="nav-link">Eletrodomésticos</a></li>
+            </ul>
+
+            <div class="login-button">
+                <input type="submit" value="Entrar" name="entrar" id="entrar" onclick="entrou()">
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()">
+                    <img class="icon" src="./img/responsive/menu_white_36dp.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <aside>
+        <form>
+            <br>
+            <fieldset>
+                <legend>Insira seus dados para concluir o cadastro</legend>
+                <br><br>    
+                    <div id="pessoais">
+                        <div class="nomes">
+                            <label>Nome Completo</label>
+                            <br>
+                            <input class="cor" type="text" id="nome" name="nome" required>
+                        </div>
+                        <div class="sobrenomes">
+                            <label>Seu Sobrenome</label>
+                            <br>
+                            <input class="cor" type="text" name="sobrenome" id="sobrenome" required>
+                        </div>
+                        <div class="numeros">
+                            <label>Telefone ou Celular</label>
+                            <br>
+                            <input class="cor" type="number" id="numero" name="numero" required>
+                        </div>
+                    </div>
+                    <br>
+                    <p>Insíra Dados Válidos</p>
+                    <br>
+                    <div id="docum">
+                        <div class="dados">
+                            <label>R.G</label>
+                            <br>
+                            <input class="cor" type="text" id="rg" name="rg">
+                        </div>
+                        <div class="dados2">
+                            <label>C.P.F</label>
+                            <br>
+                            <input class="cor" type="text" id="cpf" name="cpf">
+                        </div>
+                    </div>
+                    <br>
+                    <div id="enderecos">
+                        <div class="CEP">
+                            <label>C.E.P</label>
+                            <br>
+                            <input class="cor" type="number" id="cep" name="cep">
+                        </div>
+                        <div class="cidades">
+                            <label>Cidade</label>
+                            <br>
+                            <input class="cor" type="text" id="cidade" name="cidade">
+                        </div>
+                        <div class="estados">
+                            <label>Estado</label>
+                            <br>
+                            <input class="cor" type="text" id="estado" name="estado">
+                        </div>
+                        <div class="bairros">
+                            <label>Bairro</label>
+                            <br>
+                            <input class="cor" type="text" id="bairro" name="bairro">
+                        </div>
+                        <div class="ruas">
+                            <label>Rua ou AV.</label>
+                            <br>
+                            <input class="cor" type="text" id="rua" name="rua">
+                        </div>
+                        <div class="numero-casa">
+                            <label>Numero</label>
+                            <br>
+                            <input class="cor" type="text" id="num-casa" name="num-casa">
+                        </div>
+                        <div class="complementos">
+                            <label>Complemento de endereço</label>
+                            <br>
+                            <input class="cor" type="text" id="complemento" name="complemento">
+                        </div>
+                    </div>
+                    <br>
+                    <div id="aparta">
+                        <div class="iden">
+                            <h4>Caso more em Apartamento</h4>
+                        </div>
+                        <br><br>
+                        <div class="blocos">
+                            <label>Bloco</label>
+                            <br>
+                            <input class="cor" type="text" id="bloco" name="bloco">
+                        </div>
+                        <div class="apartamento">
+                            <label>Numero do apartamento</label>
+                            <br>
+                            <input class="cor" type="text" id="num-aparta" name="num-aparta">
+                        </div>
+                    </div>
+                    <br>
+                    <input type="checkbox" name="maior" id="maior" class="teste" required>
+                    <label>Tenho mais de 18 anos de idade</label>
+            </fieldset>
+            <br>
+        </form>
+    </aside>
+</main>
+
+<footer>
+    <div id="header-footer">
+        <nav id="nav-footer">
+            <div id="footer_content">
+                <div id="footer_contacts">
+                    <img src="./img/logo1.png" alt="logo">
+                    <h2>TaquaShop</h2>
+                    <p>Clicou, comprou, chegou!.</p>
+
+                    <div id="footer_social_media">
+                        <a href="#" class="footer-link" id="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" class="footer-link" id="facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" class="footer-link" id="whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <ul class="footer-list">
+                    <li>
+                        <h3>Produtos</h3>
+                    </li>
+                    <li>
+                        <a href="./produtos/alim.html" class="footer-link">Alimentos</a>
+                    </li>
+                    <li>
+                        <a href="./produtos/bele.html" class="footer-link">Beleza</a>
+                    </li>
+                    <li>
+                        <a href="./produtos/veic.html" class="footer-link">Veículos</a>
+                    </li>
+                    <li>
+                        <a href="./produtos/move.html" class="footer-link">Movéis</a>
+                    </li>
+                    <li>
+                        <a href="./produtos/tecn.html" class="footer-link">Tecnologia</a>
+                    </li>
+                    <li>
+                        <a href="./produtos/elet.html" class="footer-link">Eletrodomésticos</a>
+                    </li>
+                </ul>
+
+                <ul class="footer-list">
+                    <li>
+                        <h3>Sobre nós</h3>
+                        <a href="#">
+                            <p>Clique aqui para saber sobre nós</p>
+                        </a>
+                    </li>
+                </ul>
+
+                <div id="footer_subscribe">
+                    <h3>Mais infromações</h3>
+
+                    <p>
+                        Coloque seu email para mais informações
+                    </p>
+
+                    <div id="input_group">
+                        <input type="email" id="email">
+                        <button>
+                            <i class="fa-regular fa-envelope"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="footer_copyright">
+                <p>&#169; 2023 Projeto de Tcc- TaquaShop</p>
+            </div>
+        </nav>
+    </div>
+</footer>
+<script src="./javas/href.js"></script>
+<script src="./javas/menu.js"></script>
+</body>
+</html>

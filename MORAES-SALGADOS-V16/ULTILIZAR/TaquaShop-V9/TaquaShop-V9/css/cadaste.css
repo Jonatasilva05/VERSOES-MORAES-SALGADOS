@@ -1,0 +1,44 @@
+form {
+    padding: 0 20px 8px 20px;
+    background:linear-gradient(to left, #d8a5b5, #c0617f, #a74a69, #6f233e);
+    color: #fff;
+}
+
+form .cor {
+    color: #000000;
+    border: 2px solid #000000;
+    border-radius: 2px;
+    background: #0588a5;
+}
+
+form input,label {
+    font-size: 1.3rem;
+    margin: 0px 0px 5px 5px;
+}
+
+form p {
+    font-size: 1.3rem;
+}
+
+legend {
+    font-size: 1.4rem;
+    color: #fff;    
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+    background: linear-gradient(145deg, #017a96, #0190b3);
+    box-shadow:  5px 5px 14px #015266,
+             -3px -3px 10px #01bce8;
+}
+
+fieldset {
+    border-radius: 4px;
+    background: #a74a69;
+    box-shadow:  -8px -8px 16px #5f2a3c,
+             8px 8px 16px #ef6a96;
+}
+
+#pessoais, #docum, #enderecos, #aparta {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}

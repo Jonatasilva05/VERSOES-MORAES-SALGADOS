@@ -1,0 +1,15 @@
+<div id="letra">
+          <figure class="foto-legenda">
+                            <img src="images/queen.jpg" id="imgLetra" 
+                                alt="Página de Letras Musicais"/>                             
+                            <figcaption>
+                                <h3>
+                                    Letras
+                                </h3>
+                                
+                                <p>
+                                    Aprenda as Músicas
+                                </p>
+                            </figcaption>
+                        </figure>	                        
+                    </div>          

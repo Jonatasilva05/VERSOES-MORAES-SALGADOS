@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="./css/maca.css">
+
+    <!--Google Fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>TaquaShop</title>
+
+</head>
+<body>
+
+<header>    <!--C.A.B.E.C.Á.R.I.O-->
+    <div id="header">
+        <nav id="nav-bar">
+            <div id="logo">
+                <a href="./index.html">
+                    <img src="./img/LOGON.png" alt="logo">
+                </a>
+            </div>
+            <div id="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="./produtos/alim.html" class="nav-link">Alimentos</a></li>
+                    <li class="nav-item"><a href="./produtos/bele.html" class="nav-link">Beleza</a></li>
+                    <li class="nav-item"><a href="./produtos/veic.html" class="nav-link">Veículos</a></li>
+                    <li class="nav-item"><a href="./produtos/move.html" class="nav-link">Movéis</a></li>
+                    <li class="nav-item"><a href="./produtos/tecn.html" class="nav-link">Tecnologia</a></li>
+                    <li class="nav-item"><a href="./produtos/elet.html" class="nav-link">Eletrodomésticos</a></li>
+                </ul>
+            </div>
+
+            <div class="login-button">
+                <input type="submit" value="Entrar" name="entrar" id="Entrar" onclick="Entrou()">
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()">
+                    <img class="icon" src="./img/responsive/menu_white_36dp.svg" alt="">
+                </button>
+            </div>   
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="./produtos/alim.html" class="nav-link">Alimentos</a></li>
+                <li class="nav-item"><a href="./produtos/bele.html" class="nav-link">Beleza</a></li>
+                <li class="nav-item"><a href="./produtos/veic.html" class="nav-link">Veículos</a></li>
+                <li class="nav-item"><a href="./produtos/move.html" class="nav-link">Movéis</a></li>
+                <li class="nav-item"><a href="./produtos/tecn.html" class="nav-link">Tecnologia</a></li>
+                <li class="nav-item"><a href="./produtos/elet.html" class="nav-link">Eletrodomésticos</a></li>
+            </ul>
+
+            <div class="login-button">
+                <input type="submit" value="Entrar" name="entrar" id="entrar" onclick="entrou()">
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()">
+                    <img class="icon" src="./img/responsive/menu_white_36dp.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>  <!--C.A.R.R.O.S.E.L-->
+    <section>
+        <div id="dest">
+            <h2>DESTAQUES DO DIA</h2>
+        </div>
+        <div id="carrosel">
+            <div data-slide="slide" class="slide">
+                <div class="slide-items">
+                    <img src="./img/carro/carro2.jpg" alt="img 1">
+                    <img src="./img/moveis/guarda-roupa.jpg" alt="img 2">
+                    <img src="./img/perfumes/perfume2.jpg" alt="img 3">
+                    <img src="./img/tecnologia/cell2.jpg" alt="img 4">
+                    <img src="./img/carro/carro1.jpg" alt="img 5">
+                    <img src="./img/eletrodomesticos/fogao.jpg" alt="img 6">
+                </div>
+                <nav class="slide-nav">
+                <div class="slide-thumb"></div>
+                <button class="slide-prev">Anterior</button>
+                <button class="slide-next">Próximo</button>
+                <div id="euqro">
+                        <input type="button" value="Eu quero">
+                </div>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <div class="br"></div>
+
+    <aside>
+        <div id="categorias">
+            <div class="icones-categoria">
+                <a href="./produtos/alim.html">
+                    <img src="./img/categoria/alimento.jpg" alt="catego">
+                </a>
+                Alimentos
+            </div>
+            <div class="icones-categoria">
+                <a href="./produtos/bele.html">
+                    <img src="./img/categoria/perfume.jpg" alt="catego">
+                </a>
+                Beleza
+            </div>
+            <div class="icones-categoria">
+                <a href="./produtos/veic.html">
+                    <img src="./img/categoria/carro.jpg" alt="catego">
+                </a>
+                Veiculos
+            </div>
+            <div class="icones-categoria">
+                <a href="./produtos/move.html">
+                    <img src="./img/categoria/moveis.jpg" alt="catego">
+                </a>
+                Móveis
+            </div>
+            <div class="icones-categoria">
+                <a href="./produtos/tecn.html">
+                    <img src="./img/categoria/celular.jpg" alt="catego">
+                </a>
+                Tecnologia
+            </div>
+            <div class="icones-categoria">
+                <a href="./produtos/elet.html">
+                    <img src="./img/categoria/eletro.jpg" alt="catego">
+                </a>
+                Eletros
+            </div>
+        </div>
+    </aside>
+
+    <article>
+        <h1>Promocões do dia</h1>
+    </article>    
+
+</main>
+
+
+<footer>
+    <div id="header-footer">
+        <nav id="nav-footer">
+            <div id="footer_content">
+                <div id="footer_contacts">
+                    <img src="./img/logo1.png" alt="logo">
+                    <h2>TaquaShop</h2>
+                    <p>Clicou, comprou, chegou!.</p>
+
+                    <div id="footer_social_media">
+                        <a href="#" class="footer-link" id="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" class="footer-link" id="facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" class="footer-link" id="whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <ul class="footer-list">
+                    <li>
+                        <a href="./produtos/alim.html" class="footer-link">Alimentos</a>
+                    </li>
+                    <li>
+                        <a href="./produtos/bele.html" class="footer-link">Beleza</a>
+                    </li>
+                    <li>
+                        <a href="./produtos/veic.html" class="footer-link">Veículos</a>
+                    </li>
+                    <li>
+                        <a href="./produtos/move.html" class="footer-link">Movéis</a>
+                    </li>
+                    <li>
+                        <a href="./produtos/tecn.html" class="footer-link">Tecnologia</a>
+                    </li>
+                    <li>
+                        <a href="./produtos/elet.html" class="footer-link">Eletrodomésticos</a>
+                    </li>
+                </ul>
+
+                <ul class="footer-list">
+                    <li>
+                        <h3>Sobre nós</h3>
+                        <a href="#">
+                            <p>Clique aqui para saber sobre nós</p>
+                        </a>
+                    </li>
+                </ul>
+                
+                <div id="footer_subscribe">
+                    <h3>Mais infromações</h3>
+
+                    <p>
+                        Coloque seu email para mais informações
+                    </p>
+
+                    <div id="input_group">
+                        <input type="email" id="email">
+                        <button>
+                            <i class="fa-regular fa-envelope"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="footer_copyright">
+                <p>&#169; 2023 Projeto de Tcc- TaquaShop</p>
+            </div>
+        </nav>
+    </div>
+</footer>
+
+<script src="./javas/href.js"></script>
+<script src="./javas/carrosel.js"></script>
+<script src="./javas/menu.js"></script>
+</body>
+</html>

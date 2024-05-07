@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,300;1,400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter' , sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: linear-gradient(80deg,  #6808b6,  #2522c7) ;
+}
+
+.container {
+    width: 80%;
+    height: 60%;
+    display: flex;
+    box-shadow: -20px 20px 20px rgba( 5, 5, 0, .500);
+}
+
+.image-form {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000086;
+}
+
+.image-form img {
+    width: 35rem;
+}
+
+.formulário {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #ffffff;
+    padding: 3rem;
+}
+
+.header-form {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-login {
+    display: flex;
+    align-items: center;
+}
+
+.button-login button{
+    border: none;
+    background-color: #f80202;
+    padding: 0.4rem;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.button-login button:hover {
+    background-color: #2522c7;
+}
+
+.button-login button a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.header-form h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.5rem;
+    background-color: #2522c7;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px
+}
+
+.dados-pessoais {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.caixa-dados {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.1rem;
+}
+
+.caixa-dados input {
+    margin: 0.6rem;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #00000086;
+}
+
+.caixa-dados input:hover {
+    background-color: #837979;
+}
+
+.caixa-dados input:focus-visible {
+    outline: 1px solid #2522c7;
+}
+
+.caixa-dados label,
+.titulos-genero h6 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #00000086;
+}
+
+.caixa-dados input::placeholder {
+    color: #00000086;
+}
+
+.genero {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 0.5rem;
+}
+
+.generos-input {
+    display: flex;
+    align-items: center;
+}
+
+.generos-input input{
+    margin-right: 0.35rem;
+}
+
+.generos-input label {
+    font-size: 0.81rem;
+    font-weight: 600;
+    color: #00000086;
+}
+
+.button-next button {
+    width: 100%;
+    margin-top: 2.5rem;
+    border: none;
+    background-color: #2522c7;
+    padding: 0.62rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button-next button:hover {
+    background-color: #2522c7;
+}
+
+.button-next button:hover a {
+    text-decoration: none;
+    font-size: 0.90rem;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+@media screen and (max-width :1330px) {
+    .image-form{
+        display: none;
+    }
+
+    .container {
+        width: 80%;
+    }
+
+    .formulário {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1064px) {
+    .container {
+        width: 90%;
+        height: auto;
+    }
+
+    .caixa-dados {
+        flex-direction: column;
+        overflow: hidden;
+        flex-wrap: nowrap;
+    }
+
+    .caixa-genero {
+    }
+
+    .genero {
+        flex-direction: column;
+    }
+
+}

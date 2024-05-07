@@ -1,0 +1,233 @@
+:root{
+    --color-light-50: #f8fafc;
+
+    --color-dark-claro-0: #c4c4c4;
+    --color-dark-50: #797984;
+    --color-dark-100: #312d37;
+    --color-dark-900: #000;
+
+    --color-purple-50: #7c3aed;
+    --color-purple-100: #a855f7;
+    --color-purple-200: #bf46ef;
+
+    --color-branco-001: #ddd9ce;
+    --color-vinho-mais-claro-002: #d8a5b5;
+    --color-vinho-claro-003: #c0617f;
+    --color-vinho-escuro-004: #a74a69;
+    --color-vinho-mais-escuro-005: #6f233e;
+
+    --btn1: #5f2c93;
+    --btn2: #d6267baf;
+    --btn3: #de8405cd;
+
+    --color-linear: linear-gradient(to left, var(--color-vinho-claro-003), var(--color-vinho-mais-escuro-005));
+    
+    --color-gradient: linear-gradient(90deg, var(--color-purple-50), var(--color-purple-100), var(--color-purple-200));
+
+    --color-gradient-btn: linear-gradient( var(--btn1), var(--btn2), var(--btn3));
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+}
+
+#container {
+    height: 100vh;
+    width: 100%;
+    background: var(--color-linear);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#login-form{
+    background: var(--color-light-50);
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+    border-radius: 10px;
+    gap: 30px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
+    height: fit-content;
+    animation: dark-to-light 0.3s ease-in-out;
+}
+
+#form_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#form_header h1 {
+    font-size: 40px;
+    position: relative;
+}
+
+#form_header h1::before{
+    position: absolute;
+    content: '';
+    width: 45%;
+    background-color: var(--color-purple-50);
+    height: 4px;
+    bottom: 2px;
+    border-radius: 30px;
+}
+
+#mode-icone {
+    cursor: pointer;
+    font-size: 25px;
+}
+
+#social-media {
+    display: flex;
+    justify-content: space-around;
+}
+
+#social-media img {
+    width: 50%;
+}
+
+#social-media img:hover {
+    transform: scale(1.2);
+}
+
+#social-media a {
+    text-decoration: none;
+}
+
+.media-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--color-light-50);
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+#instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807)
+}
+
+#instagram:hover {
+    background: var(--color-gradient-btn);
+}
+
+#facebook {
+    background-color: #4267b3;
+}
+
+#facebook:hover {
+    background-color: #233d70;
+}
+
+#whatsapp {
+    background-color: #25d366;
+}
+
+#whatsapp:hover {
+    background-color: #1b9146;
+}
+
+#inputs {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.input-box .label {
+    font-size: 15px;
+    color: var(--color-dark-50);
+}
+
+.envel {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 1px;
+    cursor: text;
+    border-bottom: 1px solid var(--color-purple-50);
+}
+
+.envel i{
+    font-size: 20px;
+    color: var(--color-dark-900);
+}
+
+.envel input {
+    border: none;
+    background-color: transparent;
+    width: 260px;
+    font-size: 18px;
+    padding: 0px 8px;
+}
+
+.envel input:focus {
+    outline: none;
+}
+
+#nova-senha h4,a {
+    display: flex;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+#button {
+    border: none;
+    background: #2244b2;
+    color: var(--color-light-50);
+    padding: 7px;
+    font-size: 18px;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.teste#header {
+    background-color: #000;
+}
+
+#button:hover {
+    transform: scale(1.05);
+}
+
+.dark#login-form {
+    color: var(--color-light-50);
+    background: var(--color-dark-100);
+    animation: light-to-dark 0.3s ease-in-out;
+}
+
+.dark#login-form .envel input,
+.dark#login-form .envel i {
+    color: var(--color-light-50);
+}
+
+@keyframes dark-to-light {
+    0% {
+        background-color: var(--color-dark-100);
+    }
+
+    100% {
+        background-color: var(--color-light-50);
+    }
+}
+
+@keyframes light-to-dark {
+    0% {
+        background-color: var(--color-light-50);
+    }
+    100% {
+        background-color: var(--color-dark-100);
+    }
+}

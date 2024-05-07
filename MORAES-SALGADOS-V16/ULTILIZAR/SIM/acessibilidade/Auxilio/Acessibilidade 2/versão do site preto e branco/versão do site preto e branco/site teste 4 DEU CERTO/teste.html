@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title> teste pagina css alternado </title>
+	<link rel="alternate stylesheet" type="text/css" href="paul.css" title="paul" />
+	<link rel="alternate stylesheet" type="text/css" href="default.css" title="default" />
+	<script type="text/javascript">
+	   var control = true;
+	   function setActiveStyleSheet(title) {
+			var i, a, main;
+			for(i=0;(a=document.getElementsByTagName("link")[i]);i++)
+			 {
+			if(a.getAttribute("rel").indexOf("style") != -1 && a.getAttribute("title")) {
+			a.disabled = true;
+			if(a.getAttribute("title") == title) a.disabled = false;
+				 }
+			}
+		}
+	    function trocar(){
+		    if (control){
+				
+				setActiveStyleSheet('paul'); 
+				alert('passou');
+				control=false;
+				
+			}
+			else{
+				
+				setActiveStyleSheet('default'); 
+				alert('passou');
+				control=true;
+				
+			}
+		}
+	
+	</script>
+   </head>
+   <body onload="setActiveStyleSheet('default');">
+      
+	  <a href="#" onclick="setActiveStyleSheet('paul');">change style to paul</a>
+	  <br>
+	  <br>
+	  <a href="#" onclick="setActiveStyleSheet('default');">change style to default</a>
+	  <br>
+	  <br>
+	  <a href="#" onclick="trocar();">Mudar contraste</a>
+	  
+	  <p>
+	     teste paragrafo
+	   </p>
+   </body>
+</html>   

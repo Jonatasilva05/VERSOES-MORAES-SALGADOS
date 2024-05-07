@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+	<html lang="pt-br">
+	<head>
+		<title> Exemplos de uso da tag ancora</title>
+        <meta charset = "UTF-8">
+	</head>
+	<body>
+	   <h1> teste para o github </H1>
+	   <!-- linkando com outro site -->
+	   <a href="https://www.uol.com.br/">
+	      Site uol
+       </a>
+	   <br>
+	   <!-- linkando com outra página -->
+	   <a href="pagina1.html">
+	      Pagina 1
+       </a>
+	   <br>
+	   <br>
+	   <br>
+	   <!-- rotina para pegar o comando de voz -->
+	   <p id="output"></p>
+    <button id="start">Clique aqui e diga algo</button>
+    <script>
+      (() => {
+        const startBtn = document.querySelector('#start');
+        const output = document.querySelector('#output');
+        function start() {
+          const recognition = new webkitSpeechRecognition();
+          recognition.interimResults = true;
+          recognition.lang = "pt-BR";
+          recognition.continuous = true;
+          recognition.start();
+          // This event happens when you talk in the microphone
+          recognition.onresult = function(event) {
+            for (let i = event.resultIndex; i < event.results.length; i++) {
+              if (event.results[i].isFinal) {
+                // Here you can get the string of what you told
+                const content = event.results[i][0].transcript.trim();
+                output.textContent = content;
+				if (event.results[i][0].transcript.trim() === 'UOL') {
+					window.open("https://www.uol.com.br/");
+				}
+                
+                if (event.results[i][0].transcript.trim() === 'página 1') {
+					window.open("pagina1.html");
+				}
+				
+				
+              }
+            }
+          };
+        };
+        startBtn.addEventListener('click', () => start());
+      })();
+    </script>	   
+	   
+	   
+	   
+	</body>
+</html>	
+	   
+	

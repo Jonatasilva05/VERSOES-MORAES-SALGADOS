@@ -1,1 +1,0 @@
-alert('Bem-Vindo novo Usúario');

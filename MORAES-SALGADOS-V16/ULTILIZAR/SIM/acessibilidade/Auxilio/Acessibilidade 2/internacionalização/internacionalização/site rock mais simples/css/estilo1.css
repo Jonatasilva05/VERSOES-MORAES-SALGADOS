@@ -1,0 +1,54 @@
+
+
+/*Formatação do Corpo*/
+
+body{
+	/*Colocar cor no fundo da página=cinza*/
+	background-color: silver;
+}
+
+
+/*====================================================*/
+/*Formatação das imagens das bandeiras*/
+
+
+#imgeua{
+  /*Comprimento da Imagem=200px*/
+	width: 100px;
+	/*Altura da Imagem=200px*/
+	height: 100px;
+	position: absolute;
+	left: 50px;
+	top:10px;
+}
+
+#imgbrasil{
+  /*Comprimento da Imagem=200px*/
+	width: 100px;
+	/*Altura da Imagem=200px*/
+	height: 100px;
+	left:200px;
+	position: absolute;
+	top:10px;
+}
+
+
+#imgMetallica{
+/*Altura da Imagem=80px*/	
+	height: 180px;
+	/*Largura da Imagem=100px*/
+	width: 280px;
+	/*Alinhamento a Esquerda=0px*/
+	left: 0px;
+	/*Alinhamento Superior=0px*/
+	top: 150px;
+	/*Posição Absoluta Dentro do Seu Container*/
+	position: absolute;
+}
+
+
+#conteudo{
+   top: 350px;
+   position:absolute;
+}
+

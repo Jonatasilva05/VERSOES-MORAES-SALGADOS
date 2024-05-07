@@ -1,0 +1,431 @@
+@charset "UTF-8";
+
+/*Formatação do Corpo*/
+
+body{
+	/*Colocar cor no fundo da página=cinza*/
+	background-color: silver;
+}
+
+
+/*====================================================*/
+/*Formatação das imagens das bandeiras*/
+
+#bandeiras{
+	/*Posição Absoluta Dentro do Seu Container*/
+	position: absolute;
+	/*Alinhamento Superior=40px*/
+	top:0px;
+	/*Alinhamento a Esquerda=400px*/
+	left: 1100px;
+}
+
+#imgeua{
+  /*Comprimento da Imagem=200px*/
+	width: 100px;
+	/*Altura da Imagem=200px*/
+	height: 100px;
+	position: absolute;
+	top:10px;
+}
+
+#imgbrasil{
+  /*Comprimento da Imagem=200px*/
+	width: 100px;
+	/*Altura da Imagem=200px*/
+	height: 100px;
+	left:120px;
+	position: absolute;
+	top:10px;
+}
+
+
+
+/*====================================================*/
+/*Formatação do Cabeçalho*/
+
+header#cabecalho{
+	/*Colocar cor no fundo da página=branco*/
+	background-color: white;
+	/*
+		Colocar Margin no header
+			Margin superior = -20
+			Margin direita = automática
+			Margin Inferior = 0
+			Margin Esquerda = automática
+	*/
+	margin: -20px auto 0px auto;
+	/*
+		Colocar Sobreamento no Header
+			Deslocamento Para Direita=0
+			Deslocamento Para Superior=0
+			Profundidade=10px
+			Cor=Preto Com 50%
+	*/
+	box-shadow: 0px 0px 10px rgba(0,0,0, 0.5);
+	/*
+		Distanciamento do Objeto Em Relação a Margin
+			Distanciamento=20px
+	*/
+	padding: 20px;
+	/*Altura do Header=60px*/	
+	height: 60px;
+}
+
+/*====================================================*/
+/*Formatação da Imagem*/
+
+img#imgLogo{
+	/*Altura da Imagem=80px*/	
+	height: 80px;
+	/*Largura da Imagem=100px*/
+	width: 100px;
+	/*Alinhamento a Esquerda=0px*/
+	left: 0px;
+	/*Alinhamento Superior=0px*/
+	top: 0px;
+	/*Posição Absoluta Dentro do Seu Container*/
+	position: absolute;
+}
+
+/*====================================================*/
+/*Formatação dos Títulos*/
+
+div#titulo h1{
+	/*Alinhamento a Esquerda=85px*/
+	left: 85px;
+	/*Alinhamento Superior=-5px*/
+	top: -5px;
+	/*Posição Absoluta Dentro do Seu Container*/
+	position: absolute;
+	/*Fonte do Título=Inknut Antiqua*/
+	font-family: 'Inknut Antiqua', serif;
+	/*Tamanho da Fonte é Duas Vezes Maior Que Seu Ancestral*/
+	font-size: 2em;
+	/*Colocar Todo Título Em Maiúsculo*/
+	text-transform: uppercase;
+	/*Colocar a Fonte na Cor Vermelha*/
+	color: red;
+	/*
+		Colocar Um Sobreamento no Texto
+			Deslocamento Para Direita=2px
+			Deslocamento Para Superior=2px
+			Cor=Prata
+	*/
+	text-shadow: 2px 2px silver;
+}
+
+div#titulo h2{
+	/*Alinhamento a Esquerda=85px*/
+	left: 85px;
+	/*Alinhamento Superior=35px*/
+	top: 35px;
+	/*Posição Absoluta Dentro do Seu Container*/
+	position: absolute;
+	/*Fonte do Título=Inknut Antiqua*/
+	font-family: 'Inknut Antiqua', serif;
+	/*Tamanho da Fonte é Uma Vez Maior Que Seu Ancestral*/
+	font-size: 1em;
+	/*Colocar Todo Título Em Maiúsculo*/
+	text-transform: uppercase;
+	/*Colocar a Fonte na Cor Preta*/
+	color: black;
+	/*
+		Colocar Um Sobreamento no Texto
+			Deslocamento Para Direita=2px
+			Deslocamento Para Superior=2px
+			Cor=Prata
+	*/	
+	text-shadow: 2px 2px silver;
+}
+
+/*====================================================*/
+/*Formatação do Menu*/
+
+nav#menu ul{
+	/*Visualizar Menu Em Bloco*/
+	display: block;
+}
+
+nav#menu ul{
+	/*Retirar os Marcadores da Lista*/
+	list-style: none;
+	/*Colocar Todos Itens Em Maiúsculos*/
+	text-transform: uppercase;
+	/*Posição Absoluta Dentro do Seu Container*/
+	position: absolute;
+	/*Alinhamento Superior=40px*/
+	top: 40px;
+	/*Alinhamento a Esquerda=400px*/
+	left: 400px;
+}
+
+nav#menu li{
+	/*Exibir Todos os Itens Em Linha*/
+	display: inline-block;
+	/*Cor do Fundo dos Itens=Branco*/
+	background-color: #dddddd;
+	/*Espaçamento Interno=5px*/
+	padding: 5px;
+	/*Margem de Um Item ao Outro=1px*/
+	margin: 1px;	
+	/*Transição da Propriedade Background é 1 Segundo*/
+	transition: background-color 1s;
+}
+
+nav#menu li:hover{
+	/*Muda Cor do Fundo Para Prata Quando Passar o Mouse Em Cima*/
+	background-color: #606060;
+}
+
+nav#menu a{
+	/*Cor das Ancoras=Preta*/
+	color: #000000;
+	/*Retira o Hiperlink*/
+	text-decoration: none;
+	/*Transição da Propriedade Color é 1 Segundo*/
+	transition: color 1s;
+}
+
+nav#menu a:hover{
+	/*Muda Cor Para Branca Quando Passar o Mouse Em Cima*/
+	color: #ffffff;
+}
+
+/*====================================================*/
+/*Corpo Principal da Página*/
+
+main#principal{
+	/*Muda Cor do Fundo Para Branco*/
+	background-color: white;
+	/*Alinhamento Superior=115px*/
+	top: 115px;
+	/*
+		Colocar Margin no header
+			Margin superior = -20
+			Margin direita = automática
+			Margin Inferior = 0
+			Margin Esquerda = automática
+	*/	
+	margin: -20px auto 0px auto;
+	/*
+		Colocar Sobreamento no Header
+			Deslocamento Para Direita=0
+			Deslocamento Para Superior=0
+			Profundidade=10px
+			Cor=Preto Com 50%
+	*/	
+	box-shadow: 0px 0px 10px rgba(0,0,0, 0.5);
+	/*Espaçamento Interno=20px*/
+	padding: 20px;	
+	/*Altura de Main=393px*/
+	height: 393px;	
+	/*Comprimento de Main=950px*/
+	width: 950px;
+	/*Posição Absoluta Dentro do Seu Container*/
+	position: absolute;
+}
+
+/*====================================================*/
+/*Slider Show de Notícias*/
+
+main#principal section#noticia img#imgPrincipal{
+	/*Comprimento da Imagem=400px*/
+	width: 400px;
+	/*Altura da Imagem=433px*/
+	height: 433px;
+	/*Espaçamento Interno=0px*/
+	padding: 0px;
+	/*Posição Absoluta Dentro do Seu Container*/
+	position: absolute;
+	/*Alinhamento Superior=0px*/
+	top: 0px;
+	/*Alinhamento a Esquerda=0px*/
+	left: 0px;
+}
+
+aside#complemento{
+	/*Posição Absoluta Dentro do Seu Container*/
+	position: absolute;
+	/*Comprimento de Aside=400px*/
+	width: 550px;
+	/*Alinhamento a Esquerda=410px*/
+	left: 410px;
+}
+
+aside#complemento h1{
+	/*Fonte do Título=Arial*/
+	font-family: "Arial";
+	/*Tamanho da Fonte=20pt*/
+	font-size: 20pt;
+	/*Cor do Título=Preto*/
+	color: #606060;
+	/*Margem Superior=0px*/
+	margin-top: 0px;
+}
+
+aside#complemento h2{
+	/*Muda Cor do Fundo Para Cinza*/
+	background-color: #606060;
+	/*Tamanho da Fonte=13pt*/
+	font-size: 13pt;
+	/*Cor do Título=Branco*/
+	color: #ffffff;
+	/*Espaçamento Interno=5px*/
+	padding: 5px;
+}
+
+aside#complemento p{
+	/*Alinamento do Texto=Justificado*/
+	text-align: justify;
+	/*Identação da Primeira Linha do Parágrafo=25px*/
+	text-indent: 25px;
+}
+
+/*====================================================*/
+/*Seção de Categoria*/
+
+div#musica img#imgMusica{
+	/*Comprimento da Imagem=200px*/
+	width: 200px;
+	/*Altura da Imagem=200px*/
+	height: 200px;
+	/*Espaçamento Interno=0px*/
+	padding: 0px;
+	/*Posição Absoluta Dentro do Seu Container*/
+	position: absolute;
+	/*Alinhamento Superior=450px*/
+	top: 450px;
+	/*Alinhamento a Esquerda=0px*/
+	left: 0px;
+}
+
+div#musica figure.foto-legenda figcaption{
+	/*Opacidade=0*/
+	opacity: 0;
+	/*Posição Absoluta Dentro do Seu Container*/
+	position: absolute;
+	/*Alinhamento Superior=450px*/
+	top: 450px;
+	/*Alinhamento a Esquerda=0px*/
+	left: 0px;
+	/*Muda Cor do Fundo Para Preto Com 40% de Alfa*/
+	background-color: rgba(0,0,0,0.4);
+	/*Cor do Título=Branco*/
+	color: white;
+	/*Comprimento da FigCaption=200px*/
+	width: 200px;
+	/*Altura da FigCaption=200px*/
+	height: 200px;
+	/*Espaçamento Interno=10px*/
+	padding: 10px;
+	/*Tamanho do Box Até Borda do Box*/
+	box-sizing: border-box;
+	/*Transição da Opacidade de 0 Para 1 Em Um Segundo*/
+	transition: opacity 1s;
+}
+
+div#musica figure.foto-legenda:hover figcaption{
+	/*
+		Transição da Opacidade de 0 Para 1 Em Um Segundo
+		Quando Passar o Mouse Por Cima
+	*/
+	opacity: 1;
+}
+
+div#musico img#imgMusico{
+	/*Comprimento da Imagem=200px*/
+	width: 200px;
+	/*Altura da Imagem=200px*/
+	height: 200px;
+	/*Espaçamento Interno=0px*/
+	padding: 0px;
+	/*Posição Absoluta Dentro do Seu Container*/
+	position: absolute;
+	/*Alinhamento Superior=450px*/
+	top: 450px;
+	/*Alinhamento a Esquerda=350px*/
+	left: 350px;
+}
+
+div#musico figure.foto-legenda figcaption{
+	/*Opacidade=0*/
+	opacity: 0;
+	/*Posição Absoluta Dentro do Seu Container*/
+	position: absolute;
+	/*Alinhamento Superior=450px*/
+	top: 450px;
+	/*Alinhamento a Esquerda=350px*/
+	left: 350px;
+	/*Muda Cor do Fundo Para Preto Com 40% de Alfa*/
+	background-color: rgba(0,0,0,0.4);
+	/*Cor do Título=Branco*/
+	color: white;
+	/*Comprimento da FigCaption=200px*/
+	width: 200px;
+	/*Altura da FigCaption=200px*/
+	height: 200px;
+	/*Espaçamento Interno=10px*/
+	padding: 10px;
+	/*Tamanho do Box Até Borda do Box*/
+	box-sizing: border-box;
+	/*Transição da Opacidade de 0 Para 1 Em Um Segundo*/
+	transition: opacity 1s;
+}
+
+div#musico figure.foto-legenda:hover figcaption{
+	/*
+		Transição da Opacidade de 0 Para 1 Em Um Segundo
+		Quando Passar o Mouse Por Cima
+	*/	
+	opacity: 1;
+}
+
+div#letra img#imgLetra{
+	/*Comprimento da Imagem=200px*/
+	width: 200px;
+	/*Altura da Imagem=200px*/
+	height: 200px;
+	/*Espaçamento Interno=0px*/
+	padding: 0px;
+	/*Posição Absoluta Dentro do Seu Container*/
+	position: absolute;
+	/*Alinhamento Superior=450px*/
+	top: 450px;
+	/*Alinhamento a Esquerda=700px*/
+	left: 700px;
+}
+
+div#letra figure.foto-legenda figcaption{
+	/*Opacidade=0*/
+	opacity: 0;
+	/*Posição Absoluta Dentro do Seu Container*/
+	position: absolute;
+	/*Alinhamento Superior=450px*/
+	top: 450px;
+	/*Alinhamento a Esquerda=700px*/
+	left: 700px;
+	/*Muda Cor do Fundo Para Preto Com 40% de Alfa*/
+	background-color: rgba(0,0,0,0.4);
+	/*Cor do Título=Branco*/
+	color: white;
+	/*Comprimento da FigCaption=200px*/
+	width: 200px;
+	/*Altura da FigCaption=200px*/
+	height: 200px;
+	/*Espaçamento Interno=10px*/
+	padding: 10px;
+	/*Tamanho do Box Até Borda do Box*/
+	box-sizing: border-box;
+	/*Transição da Opacidade de 0 Para 1 Em Um Segundo*/
+	transition: opacity 1s;
+}
+
+div#letra figure.foto-legenda:hover figcaption{
+	/*
+		Transição da Opacidade de 0 Para 1 Em Um Segundo
+		Quando Passar o Mouse Por Cima
+	*/	
+	opacity: 1;
+}
+
